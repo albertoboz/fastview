@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #FDF5EB;
+}
+
+// NAVBAR
+.navbar-style {
+  background-color: #D1633F;
+  border: none;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #3B3738;
+}
+.navbar-header .navbar-brand {
+  color: #3B3738;
+}
+
+// HOME PAGE
+.index-img {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// FOOTER
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 40px;
+}
+.site-footer {
+  background: #D1633F;
+}
+.site-footer p {
+  float: right;
+  padding: 10px;
+  color: #FFF;
+}
+.push {
+  height: 40px;
+}
+
+h1 {
+  color: #3B3738;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+h2 {
+  color: #3B3738;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 72px;
+  text-align: center;
+}
+h3 {
+  color: #3B3738;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 72px;
+  text-align: center;
+}
+p {
+  color: #3B3738;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  line-height: 24px;
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
