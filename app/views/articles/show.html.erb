@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<div class="articles-wrap">
+  <div class="article-show">
+    <%= image_tag(@article.image_url, class: "img-responsive article-media") %>
+    <%= video_tag(@article.video_url, class: "article-video article-media") %>
+    <h1><%= @article.title %></h1>
+    <div class="body-show">
+      <p><%= @article.body %></p>
+    </div>
+    <div class="article-links">
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+    <%= link_to 'Back', articles_path %>
+    </div>
+  </div>
+</div>

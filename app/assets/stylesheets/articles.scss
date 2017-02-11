@@ -1,0 +1,121 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.article-media {
+  display: block;
+  margin: auto;
+  position: relative;
+  overflow:hidden;
+}
+.article-video:empty {
+  display: none;
+}
+.article-preview {
+  max-width: 450px;
+  margin: auto;
+  border-style: outset;
+  margin-bottom: 40px;
+}
+.article-body {
+  max-height: 100px;
+  overflow: hidden;
+  padding: 20px;
+}
+.articles-wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+ //SHOW PAGE
+ .body-show {
+   padding: 20px;
+ }
+ .article-show {
+   max-width: 600px;
+   margin: auto;
+ }
+
+//LINKS
+.article-links {
+  text-align: center;
+  margin: 20px;
+}
+.article-links a {
+  color: #FFF;
+  background-color: #484848;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 3px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+.article-links a:hover {
+  color: #111;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #FFF;
+  transition: color, background-color 600ms;
+  -webkit-transition: color, background-color 600ms;
+  text-shadow: 1px 1px 1px #625F5F;
+}
+
+//ARTICLE FORM
+#article-form {
+  text-align: center;
+  width: 100%;
+  color: #888;
+}
+#article-form form {
+  background: #E5E5E5;
+  display: inline-block;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+}
+.actions input {
+  background: #E27575;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+}
+.actions input:hover {
+  background: #CF7A7A
+}
+.field input {
+  border: 1px solid #DADADA;
+  color: #888;
+  height: 30px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 100%;
+  font-size: 12px;
+  line-height:15px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+  -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+  -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.field textarea {
+  border: 1px solid #DADADA;
+  color: #888;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 100%;
+  min-width: 400px;
+  min-height: 300px;
+  line-height:25px;
+  font-size: 12px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+  -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+  -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}

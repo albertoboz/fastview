@@ -1,26 +1,26 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #FDF5EB;
+  background-color: #f4f4f4;
 }
 
 // NAVBAR
 .navbar-style {
-  background-color: #D1633F;
+  background-color: #333333;
   border: none;
 }
 .navbar-inverse .navbar-nav li a {
-  color: #3B3738;
+  color: #B3B8BC;
 }
 .navbar-header .navbar-brand {
-  color: #3B3738;
+  color: #B3B8BC;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-// HOME PAGE
-.index-img {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+// PAGE
+.page-wrap {
+  min-height: 100%;
 }
 // ABOUT PAGE
 #description {
@@ -28,29 +28,19 @@ html, body {
   padding-top: 100px;
 }
 // FOOTER
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -40px;
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  height: 40px;
-}
+
 .site-footer {
-  background: #D1633F;
+  // height: 40px;
+  padding: 20px 0;
+  background: #484848;
 }
 .site-footer p {
   float: right;
   padding: 10px;
   color: #FFF;
 }
-.push {
-  height: 40px;
-}
+
+//TYPOGRAPHY
 
 h1 {
   color: #3B3738;

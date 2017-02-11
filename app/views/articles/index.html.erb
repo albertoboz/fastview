@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <h1>BLOG</h1> -->
+<div class="articles-wrap">
+    <% @articles.each do |article| %>
+
+      <div class="article-preview">
+        <%= image_tag(article.image_url, class: "img-responsive article-media") %>
+        <%= video_tag(article.video_url, class: "article-video article-media") %>
+        <h1><%= article.title %></h1>
+        <div class="article-body">
+          <p><%= article.body %></p>
+        </div>
+        <div class="article-links">
+          <span><%= link_to 'Read more', article %></span>
+          <span><%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+<br>
+
+<div class="article-links">
+  <%= link_to 'New Article', new_article_path %>
+</div>
