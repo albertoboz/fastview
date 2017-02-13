@@ -2,7 +2,11 @@
 <div class="articles-wrap">
   <div class="article-show">
     <%= image_tag(@article.image_url, class: "img-responsive article-media") %>
-    <%= video_tag(@article.video_url, class: "article-video article-media") %>
+    <% if @article.video_url.present? %>
+      <div class="video-container">
+        <iframe class="article-video" src="<%= @article.video_url %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <% end %>
     <h1><%= @article.title %></h1>
     <div class="body-show">
       <p><%= @article.body %></p>
