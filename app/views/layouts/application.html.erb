@@ -39,6 +39,13 @@
             <li>
               <%= link_to 'Contact', static_pages_contact_path %>
             </li>
+            <li class="search-form">
+              <%= form_tag("/articles", method: "get") do %>
+                <!-- <%= label_tag(:q, "Search for:") %> -->
+                <%= text_field_tag(:q, nil, :placeholder => 'Search for an article', class: 'search-field') %>
+                <%= submit_tag("Search", class: 'search-button') %>
+              <% end %>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
