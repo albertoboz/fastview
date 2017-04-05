@@ -28,6 +28,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right link-style">
             <li>
+              <% form_for(@subscriber) do |f| %>
+                <%= f.text_field :email %>
+                <%= f.submit %>
+              <% end %>
+            </li>
+            <li>
               <%= link_to 'Blog', root_path %>
             </li>
             <li>
